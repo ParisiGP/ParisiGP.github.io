@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/portifolio.css">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,32 +42,32 @@
 <header><h1>Meu portfólio</h1></header>
 
 
-<div id="Portifolio">
+<div id="projectsConteiner">
 
-  <div class="ReactBox Box"  onmouseover="playVideo('1')" onmouseout="pauseVideo('1')">
-    <video class="ReactVideo ReactVideo1" id="meuVideo" controls muted>
-      <source src="/assets/1109(1).mp4" type="video/mp4">
-      Seu navegador não suporta o elemento de vídeo.
-    </video>
+  <div class="projects">
+
+    <div id="reactProject" class="project" onclick="RotateCard(this)">
+      <div class="frontCard">
+        <img id="reactImage" src="/assets/PRj_React.png" alt="">
+      </div>
+      <div class="backCard">
+        <h2>Lista de tarefas</h2>
+        <p>
+          Criado em <span id="spanReact"><ion-icon name="logo-react"></ion-icon>React</span><ion-icon name="add-outline"></ion-icon><span id="spanVue"><ion-icon name="logo-vue"></ion-icon>Vue </span>esse projeto é uma lista de tarefas onde você pode pesquisar tarefas, filtrar por todas, concluidas ou não concluidas e também organizar por ordem alfabética crescente ou decrescente. <br>
+          Abaixo temos as tarefas onde podemos completalas ou excluilas. <br>
+          Por ultimo podemos criar uma tarefa com a categoria referente a ela.
+        </p>
+      </div>
+      
+    </div>
+    <div class="project"></div>
+    <div class="project"></div>
 
   </div>
 
-  <div class="CarauariBox Box" >
-    <img class="ReactImage ReactImage2" src="/assets/PRJ_Carauari.png" alt="Sua Imagem">
-  </div>
+  
 
 </div>
-
-<div id="fullScreen">
-
-  <div id="fullVideo">
-    
-  </div>
-
-</div>
-
-
-
 
 </body>
 

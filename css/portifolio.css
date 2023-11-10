@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#InitialPage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 40px;
+    padding: 5px 10px;
+    background: var(--surface-color);
+    border: 1px solid var(--stroke-color);
+    border-radius:0 0 8px 0;
+    backdrop-filter: blur(4px);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    transition: background 0.2s;
+  }
+  
+  #InitialPage:hover{
+    background: var(--surfece-color-hover);
+    border: 1px solid var(--text-color);
+  }
+  
+  #Head{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .theme-switch__containerP {
+    width: var(--container-width);
+    height: var(--container-height);
+    background-color: var(--container-light-bg);
+    border-radius: 0 0 0 2.25em;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-box-shadow: 0em -0.062em 0.062em rgba(0, 0, 0, 0.25), 0em 0.062em 0.125em rgba(255, 255, 255, 0.94);
+    box-shadow: 0em -0.062em 0.062em rgba(0, 0, 0, 0.25), 0em 0.062em 0.125em rgba(255, 255, 255, 0.94);
+    -webkit-transition: var(--transition);
+    -o-transition: var(--transition);
+    transition: var(--transition);
+    position: relative;
+  }
+  
+  .theme-switch__containerP::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    inset: 0;
+    -webkit-box-shadow: 0em 0.05em 0.187em rgba(0, 0, 0, 0.25) inset, 0em 0.05em 0.187em rgba(0, 0, 0, 0.25) inset;
+    box-shadow: 0em 0.05em 0.187em rgba(0, 0, 0, 0.25) inset, 0em 0.05em 0.187em rgba(0, 0, 0, 0.25) inset;
+    border-radius: 0 0 0 2.25em
+  }
+  
+  .theme-switch__checkbox:checked + .theme-switch__containerP {
+    background-color: var(--container-night-bg);
+  }
+  
+  .theme-switch__checkbox:checked + .theme-switch__containerP .theme-switch__circle-container {
+    left: calc(100% - var(--circle-container-offset) - var(--circle-container-diameter));
+  }
+  
+  .theme-switch__checkbox:checked + .theme-switch__containerP .theme-switch__circle-container:hover {
+    left: calc(100% - var(--circle-container-offset) - var(--circle-container-diameter) - 0.187em)
+  }
+  
+  .theme-switch__circle-container:hover {
+    left: calc(var(--circle-container-offset) + 0.187em);
+  }
+  
+  .theme-switch__checkbox:checked + .theme-switch__containerP .theme-switch__moon {
+    -webkit-transform: translate(0);
+    -ms-transform: translate(0);
+    transform: translate(0);
+  }
+  
+  .theme-switch__checkbox:checked + .theme-switch__containerP .theme-switch__clouds {
+    bottom: -4.062em;
+  }
+  
+  .theme-switch__checkbox:checked + .theme-switch__containerP .theme-switch__stars-container {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+
+
+  /* projetos */
+
+  #projectsConteiner{
+    width: 100%;
+   border: 1px dotted blueviolet;
+   padding: 0px 10px;
+  
+  }
+
+  .projects{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    border: 1px solid blue;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .project{
+    border: 5px solid var(--stroke-color);
+    width: 400px;
+    height: 400px;
+  }
+
+  #reactProject{
+    height: 500px;
+    border-radius: 50px 0 50px 0;
+    overflow: hidden;
+    transition: transform 1s ease;
+  }
+
+  #reactImage{
+    width: 100%;
+    height: 100%;
+  }
+
+  .frontCard{
+    display: block;
+  }
+
+  .backCard{
+    display: none;
+    flex-direction: column;
+    padding: 20px;
+    transform: rotateY(180deg);
+    width: 100%;
+    height: 100%;
+    background-color:var(--surface-color) ;
+
+  }
+
+  .backCard h2{
+    justify-self: flex-start;
+    font-size: 24px;
+    margin: auto 0;
+  }
+
+
+  .backCard p{
+    margin: auto;
+    text-justify: center;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: justify;
+  }
+
+  #spanReact{
+    color: #00d8fe;
+  }
+
+ #spanVue{
+    color: #74ffe8;
+ }
+
+
+  
