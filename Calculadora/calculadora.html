@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Calculadora/calculadora.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="calculadora">
+
+        <input type="text" id="resultado" disabled>
+        <div id="teclado">
+            <div>
+                <button onclick="GetButtonValue('1')">1</button>
+                <button onclick="GetButtonValue('2')">2</button>
+                <button onclick="GetButtonValue('3')">3</button>
+                <button onclick="GetButtonValue('+')">+</button>
+            </div>
+            <div>
+                <button onclick="GetButtonValue('4')">4</button>
+                <button onclick="GetButtonValue('5')">5</button>
+                <button onclick="GetButtonValue('6')">6</button>
+                <button onclick="GetButtonValue('-')">-</button>
+            </div>
+            <div>
+                <button onclick="GetButtonValue('7')">7</button>
+                <button onclick="GetButtonValue('8')">8</button>
+                <button onclick="GetButtonValue('9')">9</button>
+                <button onclick="GetButtonValue('*')">X</button>
+            </div>
+            <div>
+                <button onclick="GetButtonValue('0')">0</button>
+                <button onclick="GetButtonValue('.')">,</button>
+                <button onclick="GetButtonValue('=')">=</button>
+                <button onclick="GetButtonValue('/')">÷</button>
+            </div>
+            <div id="Clear">
+                <button onclick="GetButtonValue('C')">C</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="/Calculadora/calculadora.js"></script>
+
+</html>

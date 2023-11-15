@@ -102,7 +102,6 @@
 
   #projectsConteiner{
     width: 100%;
-   border: 1px dotted blueviolet;
    padding: 0px 10px;
   
   }
@@ -112,7 +111,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     width: 100%;
-    border: 1px solid blue;
+   
     flex-wrap: wrap;
     gap: 20px;
   }
@@ -153,12 +152,12 @@
   .backCard h2{
     justify-self: flex-start;
     font-size: 24px;
-    margin: auto 0;
+
   }
 
 
   .backCard p{
-    margin: auto;
+    margin: 80px 0px 0px 0px;
     text-justify: center;
     font-size: 18px;
     font-weight: 500;
@@ -173,5 +172,18 @@
     color: #74ffe8;
  }
 
+ #Calculator{
+  width: 400px;
+   height: 500px;
+   overflow: hidden;
+   border-radius: 50px 0 50px 0;
+  
+ }
+
+ .calculadora{
+  width: 110%;
+  height: 107%;
+  overflow: hidden;
+ }
 
   

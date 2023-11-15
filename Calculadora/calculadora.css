@@ -1,0 +1,93 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+
+@font-face {
+    font-family: 'Calculator';
+    src: url('Calculator.ttf') format('truetype');
+}
+
+/* Estilos da calculadora */
+
+body{
+    background-color: rgb(0, 0, 0);
+    font-family: 'Calculator';
+
+}
+
+#calculadora{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 384px;
+    height: 485px;
+    background-color: #000;
+    overflow: hidden;
+    border-radius: 50px 0 50px 0;
+}
+
+#resultado{
+    font-family: 'Calculator';
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 20px;
+    width: 300px;
+    height: 85px;
+    border-radius: 10px;
+    background-color: #64938e;
+    text-align: right;
+    padding:0 20px;
+    box-sizing: border-box;
+    color: #000;
+    overflow: hidden;
+    border: none;
+    
+}
+
+#teclado{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 400px;
+
+}
+
+#teclado button{
+    width: 65px;
+    height: 60px;
+    margin: 5px;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Calculator';
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #bfbfbf;
+    color: #000;
+    cursor: pointer;
+    box-shadow: 0 0 10px #000;
+    outline: none;
+}
+
+
+#teclado button:hover{
+    background-color: #898989;
+    color: #000;
+}
+
+#teclado button:active{
+    background-color: #3c3c3c;
+    color: #fff;
+}
+
+#Clear button{
+    width: 300px;
+    height: 50px;
+    background-color: #ff0000;
+    color: #fff;
+}
