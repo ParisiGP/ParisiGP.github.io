@@ -13,7 +13,7 @@
     height: 50px;
     padding: 5px 10px;
     background: var(--surface-color);
-    border: 1px solid var(--stroke-color);
+    border: 1px solid white;
     border-radius:0 0 8px 0;
     backdrop-filter: blur(4px);
     text-decoration: none;
@@ -21,11 +21,13 @@
     font-size: 20px;
     transition: background 0.2s;
     cursor: pointer;
+    color: white;
   }
   
   #InitialPage:hover{
     background: var(--surfece-color-hover);
     border: 1px solid var(--text-color);
+    color: black;
   }
   
   #Head{
@@ -103,6 +105,7 @@
   #projectsConteiner{
     width: 100%;
    padding: 0px 10px;
+   color: var(--text-color);
   
   }
 
