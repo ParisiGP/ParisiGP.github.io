@@ -9,8 +9,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50px;
-    height: 40px;
+    width: 60px;
+    height: 50px;
     padding: 5px 10px;
     background: var(--surface-color);
     border: 1px solid var(--stroke-color);
@@ -20,6 +20,7 @@
     font-weight: 500;
     font-size: 20px;
     transition: background 0.2s;
+    cursor: pointer;
   }
   
   #InitialPage:hover{
@@ -96,7 +97,6 @@
     align-items: center;
     padding: 10px;
   }
-
 
   /* projetos */
 

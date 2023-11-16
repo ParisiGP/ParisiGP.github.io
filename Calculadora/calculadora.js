@@ -13,9 +13,7 @@ if (Display.value === "" && isOperator) {
 } else if (lastCharIsOperator && isOperator) {
 
 } else if (buttonValue === "=" && Display.value !== "") {
-    console.log(Display.value);
     Valor = eval(Display.value);
-    console.log(Valor);
     Display.value = Valor;
 } else if (buttonValue === "C") {
     Display.value = "";

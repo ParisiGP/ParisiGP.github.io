@@ -1,7 +1,7 @@
 
 :root{
     --text-color:white;
-    --bg-url: url(../assets/bg-mobile.jpg);
+    --bg-url: radial-gradient(rgb(80, 10, 179), rgb(0, 0, 0));
     --stroke-color: rgba(255, 255, 255, 0.5);
     --surface-color: rgba(255, 255, 255, 0.1);
     --surfece-color-hover: rgba(255, 255, 255, 0.05);
@@ -10,7 +10,7 @@
 
 .light{
     --text-color: black;
-    --bg-url: url(../assets/bg-desktop-light.jpg);
+    --bg-url: radial-gradient(rgb(255, 255, 255), rgb(80, 10, 179));
     --stroke-color: rgba(0, 0, 0, 0.5);
     --surface-color: rgba(0, 0, 0, 0.05);
     --surfece-color-hover: rgba(0, 0, 0, 0.02);
@@ -18,10 +18,7 @@
 }
 
 body {
-    background-image: var(--bg-url);
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
+    background: var(--bg-url)
 }
 
 body *{
@@ -132,7 +129,7 @@ footer {
        this is not transform scale,
        so you can choose any size */
     --container-width: 100px;
-    --container-height: 1em;
+    --container-height: 50px;
     --container-radius: 2.25em;
     /* radius 0 - minecraft mode :) */
     --container-light-bg: #3D7EAE;
